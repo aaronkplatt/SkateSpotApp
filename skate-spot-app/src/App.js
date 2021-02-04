@@ -14,11 +14,18 @@ function App() {
 
   return (
     <div className="App">
-      <NavBar />
-      <LoginButton />
-      <LogoutButton />
-      <Profile />
-      {/* <HomePage /> */}
+      <div className="fullscreen-container center-align">
+        {/* <NavBar /> */}
+        <div class="navbar">
+          <h1>LOGO</h1>
+          <LoginButton />
+          <LogoutButton />
+        </div>
+        <Profile />
+        {/* <HomePage /> */}
+
+
+      </div>
     </div>
   );
 }

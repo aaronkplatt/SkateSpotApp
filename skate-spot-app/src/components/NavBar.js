@@ -1,20 +1,17 @@
 import React from "react";
+import { useAuth0 } from '@auth0/auth0-react';
 
-const NavBar = () => (
+const NavBar = () => {
+    const { user, isAuthenticated } = useAuth0();
+
+    return(
     <div class="navbar">
-        <div>
-            <h1>Nav Bar</h1>
-        </div>
-        {/* <Navbar>
-            <Navbar.Brand href="#home">Navbar with text</Navbar.Brand>
-            <Navbar.Toggle />
-                <Navbar.Collapse className="justify-content-end">
-            <Navbar.Text>
-            Signed in as: <a href="#login">Mark Otto</a>
-            </Navbar.Text>
-            </Navbar.Collapse>
-        </Navbar> */}
+        <h1>LOGO</h1>
+        <h1>Signed in as:</h1>
+        
+        
+    
     </div>
-);
+)};
 
 export default NavBar;
