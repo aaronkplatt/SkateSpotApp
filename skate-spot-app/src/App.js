@@ -6,6 +6,7 @@ import LogoutButton from "./components/LogoutButton";
 import Profile from "./components/Profile";
 import { useAuth0 } from '@auth0/auth0-react';
 import NavBar from './components/NavBar';
+import MyAccount from './pages/MyAccount/MyAccount'
 
 function App() {
   //giving the application time to render the login stuff, (2 lines below)
@@ -21,7 +22,9 @@ function App() {
           <LoginButton />
           <LogoutButton />
         </div>
-        <Profile />
+        <MyAccount />
+        {/* <Profile /> */}
+
         {/* <HomePage /> */}
 
 
