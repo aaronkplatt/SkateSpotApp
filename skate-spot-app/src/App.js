@@ -3,9 +3,9 @@ import './App.css';
 import HomePage from "./pages/Homepage/Homepage"
 import LoginButton from "./components/LoginButton";
 import LogoutButton from "./components/LogoutButton";
-import Profile from "./components/Profile";
+// import Profile from "./components/Profile";
 import { useAuth0 } from '@auth0/auth0-react';
-import NavBar from './components/NavBar';
+// import NavBar from './components/NavBar';
 import MyAccount from './pages/MyAccount/MyAccount'
 
 function App() {
@@ -16,16 +16,17 @@ function App() {
   return (
     <div className="App">
       <div className="fullscreen-container center-align">
-        {/* <NavBar /> */}
+        {/* NAVBAR */}
+
         <div class="navbar">
           <h1>LOGO</h1>
           <LoginButton />
           <LogoutButton />
         </div>
         <MyAccount />
+        <HomePage />
         {/* <Profile /> */}
 
-        {/* <HomePage /> */}
 
 
       </div>

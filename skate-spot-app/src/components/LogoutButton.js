@@ -8,7 +8,6 @@ const LogoutButton = () => {
         //if authenticated show log out button
         isAuthenticated && (
             <div>
-
                 <div>
                     
                     <button onClick={() => logout()}>
@@ -18,7 +17,6 @@ const LogoutButton = () => {
                 <div>
                     <p>Signed in as: {user.name}</p>
                 </div>
-
             </div>
         )
         
