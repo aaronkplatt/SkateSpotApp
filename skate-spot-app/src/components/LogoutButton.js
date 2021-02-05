@@ -7,15 +7,16 @@ const LogoutButton = () => {
     return(
         //if authenticated show log out button
         isAuthenticated && (
-            <div>
-                <div>
-                    
+            <div class="row">
+                {/* Signed into this user */}
+                <div class="col-md-6">
+                    <p>Signed in as: {user.name}</p>
+                </div>
+                {/* Logout button */}
+                <div class="col-md-6">   
                     <button onClick={() => logout()}>
                         Logout
                     </button>
-                </div>
-                <div>
-                    <p>Signed in as: {user.name}</p>
                 </div>
             </div>
         )
