@@ -12,6 +12,9 @@ function Home() {
     return (
         <div>
             <h1>SKATE SPOTS</h1>
+            <div>
+                
+            </div>
             <LoginButton />
             <LogoutButton />
         </div>

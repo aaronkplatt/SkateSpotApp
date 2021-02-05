@@ -1,6 +1,6 @@
 # SkateSpotApp
 
-
+view_headline
 
 
 # Getting Started with Create React App

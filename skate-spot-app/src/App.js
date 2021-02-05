@@ -7,6 +7,7 @@ import { withAuthenticationRequired } from '@auth0/auth0-react';
 //Pages
 import HomePage from "./pages/Homepage/Homepage"
 import MyAccount from './pages/MyAccount/MyAccount';
+import Map from './pages/Map/Map';
 
 // bootstrap ($, Popper = needed for dropdown)
 import 'bootstrap';
@@ -31,10 +32,10 @@ function App() {
     <Router>
       <div className="App">
           {/* NAVBAR */}
-          <nav className="navbar">
+          <nav className="navbar row">
             <div className="dropdown">
               <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i className="fas fa-bars"></i>
+                <i class="large material-icons">view_headline</i>
               </button>
               <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <button className="dropdown-item">
@@ -43,13 +44,20 @@ function App() {
                 <button className="dropdown-item">
                   <Link to="/MyAccount">My Account</Link> 
                 </button> 
+                <button className="dropdown-item">
+                  <Link to="/Map">Map</Link> 
+                </button> 
               </div>
+            </div>
+            <div>
+              <h1>Sk8 Spots</h1>
             </div>
           </nav>
           <Switch>
                 <Route exact path="/" component={HomePage} />
                 <Route exact path="/Homepage" component={HomePage} />
                 <ProtectedRoute exact path="/MyAccount" component={MyAccount} />
+                <Route exact path="/Map" component={Map} />
                 <Route path="*" component={HomePage}/>
           </Switch>
 
