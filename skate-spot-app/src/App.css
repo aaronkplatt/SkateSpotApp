@@ -8,9 +8,12 @@
   background-color: lightblue;
   height: 100px;
 }
+
+.dropDownMenu {
+  margin: 10px;
+}
 .logo {
-  margin: auto;
-  padding: 10px;
+  margin: 20px
 }
 
 

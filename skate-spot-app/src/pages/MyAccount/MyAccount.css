@@ -1,0 +1,9 @@
+.profilePic {
+    margin: 15px;
+    border:black;
+    height: 150px;
+    width: 150px;
+}
+.userName {
+    margin: 10px
+}

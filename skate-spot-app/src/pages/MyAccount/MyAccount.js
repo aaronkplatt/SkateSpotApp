@@ -1,4 +1,5 @@
 import React from 'react';
+import './MyAccount.css';
 import { useAuth0 } from '@auth0/auth0-react';
 import JSONPretty from 'react-json-pretty';
 import LoginButton from "../../components/LoginButton";
@@ -11,14 +12,17 @@ const MyAccount = () => {
         isAuthenticated && (
             <div>
                 <LoginButton />
-                <LogoutButton />
-                <img src={user.picture} alt={user.name} />
-                <h2>{user.name}</h2>
-                <p>{user.email}</p>
+                <h1>Signed In As:</h1>
+                <h1 className="userName">{user.name}</h1>
+                <img className="profilePic" src={user.picture} alt={user.name} />
+                <p>Email: {user.email}</p>
+                <button>My Spots</button>
+                <p></p>
                 {/* We are getting all the data needed for this user below */}
-                <JSONPretty data={user} />
+                {/* <JSONPretty data={user} /> */}
                 {/* This below gives us a big log */}
                 {/* {JSON.stringify(user, null, 2)} */}
+                <LogoutButton />
             </div>
         )
     )

@@ -32,9 +32,9 @@ function App() {
     <Router>
       <div className="App">
           {/* NAVBAR */}
-          <nav className="navbar row">
+          <nav className="navbar">
             <div className="dropdown">
-              <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <button className="btn btn-secondary dropdown-toggle dropDownMenu" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="large material-icons">view_headline</i>
               </button>
               <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -50,7 +50,7 @@ function App() {
               </div>
             </div>
             <div>
-              <h1>Sk8 Spots</h1>
+              <h1 className="logo">Sk8 Spots</h1>
             </div>
           </nav>
           <Switch>

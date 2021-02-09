@@ -13,6 +13,7 @@ function Home() {
         <div>
             <h1>SKATE SPOTS</h1>
             <div>
+                <p>carasell to see spots near me</p>
                 
             </div>
             <LoginButton />
